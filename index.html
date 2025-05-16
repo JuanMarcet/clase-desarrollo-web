@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página de ejemplo</title>
+    <link rel="stylesheet" href="/Styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+
+    <nav class="header__nav">
+        <ul class="header__nav__lists">
+            <li class="header__nav__lists__item">
+                <a href="/index.html">Home</a>
+            </li>
+            <li class="header__nav__lists__item">
+                <a href="">About</a>
+            </li>
+            <li class="header__nav__lists__item">
+                <a href="">Contact</a>
+            </li>
+            <li class="header__nav__lists__item">   
+                <a href="/proyectos_creados.html">proyetos creados</a>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+
+
+    <main>
+        <section class="section__principal cuadros" >
+        <h1 class="section__principal__title">Aquí va el contenido de la página </h1>
+        <p>Lorem ipsum dolor sit amet consectetur <i> adipisicing</i> <em> elit</em>. Inventore accusantium ipsam quasi neque reprehenderit. Quod perspiciatis veniam esse optio? Distinctio, sit. Similique, possimus nesciunt sapiente suscipit quis nobis distinctio esse!</p>
+    </section>
+
+    <section class="section__secundaria cuadros">
+
+        <div class="section__contenedor__segundo ">
+            <h2 class="section__contenedor__segundo__title"> Aquí va el contenido secundario</h2>
+            <P class="section__contenedor__segundo__text"> Juan Marcet es un estudiante de <em> cuarto semestre</em> de la carrera de <Strong> ingeniería en Software </Strong> de la <u> Universidad Laica Eloy alfaro de Manabí</u>.</P>
+            <img src="/assets/perfil moodle.jpg" alt="">
+        </div>
+
+
+        <div class="section__contenedor__video">
+            <h2 class="section__contenedor__segundo__title"> video de youtube</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0ux3YqV1byc?si=2UNPbMDWmbTLhy4W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="section__contenedor__foco">
+            <h2 class="section__contenedor__segundo__title">Apagar y encender foco</h2>
+            <img src="/assets/bombilla_apagada.png" alt="bombilla apagada" id="bombilla">
+            <div class="section__contenedor__foco__botones">
+                <button id="encender" onclick="encender()">Encender</button>
+                <button id="apagar" onclick="apagar()">Apagar</button>
+            </div>
+
+        </div>
+    </section>
+
+    <article class="article__principal cuadros" >
+        <h3 class="article__principal__title">INTRODUCCIÓN</h3>
+        <p class="article__principal__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, officiis. Tenetur nesciunt quia voluptatibus voluptatum, dolore exercitationem! Doloribus maxime eos deserunt harum, sit cumque error aperiam at suscipit, quidem repellendus.</p>
+
+    <menu class="article__principal__menu">
+        <h3 class="article__principal__menu__title">Índice</h3>
+        <ul class="article__principal__menu__lists">
+            <li class="article__principal__menu__lists__item"><a href="#1">Introducción</a></li>
+            <li class="article__principal__menu__lists__item"><a href="#2">Desarrollo</a></li>
+            <li class="article__principal__menu__lists__item"><a href="#3">Conclusiones</a></li>
+        </ul>
+        <video src="/assets/Pua.mp4" controls autoplay muted></video>    
+    </menu>
+
+</article>
+
+<section class="funcionesMatematicas cuadros">
+    <div class="funcionesMatematicas__sumar">
+        <h2>Semana 4| </h2>
+        <h3>sumar valores</h3>
+        <input type="number" id="numero1" placeholder="ingrese el número 1" step="0.01" required>
+        <input type="number" id="numero2" placeholder="ingrese el número 2" step="0.01" required>
+        <p id="resultadoSuma"></p>
+        <button type="submit" onclick="sumarValores()"> Enviar</button>
+    </div>
+    <div class="funcionesMatematicas__promedio">
+        <h2>Promedio de dos calificaciones</h2>
+        <input type="number" id="calificacion1" placeholder="ingrese la calificación 1" step="0.01" required> 
+        <input type="number" id="calificacion2" placeholder="ingrese la calificación 2" step="0.01"  required>
+        <input type="number" id="calificacion3" placeholder="ingrese la calificación 3" step="0.01"required >
+
+        <p id="promedio"></p>
+        <button type="submit" onclick="calcularPromedio()"> Calcular promedio</button>
+
+    </div>
+
+
+</section>
+
+</main>
+
+<footer class="footer">
+    &copy; 2023 Juan Marcet. Todos los derechos reservados. <br>
+    <div class="footer__redes">
+        <a href="https://www.facebook.com/juanmarcet" target="_blank" ><img src="/assets/facebook_Icono.png" alt="Logo de facebook" class="footer__logos"></a>
+        <a href="https://www.instagram.com/juan_marcet_sv/" target="_blank" ><img src="/assets/instagram_icono.png" alt="Logo de instagram" class="footer__logos"></a>
+        <a href="https://github.com/JuanMarcet" target="_blank" ><img src="/assets/github_icono.png" alt="Logo de github" class="footer__logos"></a>
+        <a href="https://www.linkedin.com/in/juanmarcet" target="_blank"><img src="/assets/logotipo-de-linkedin.png" alt="Logo de linkedin" class="footer__logos"></a>
+</div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+<
