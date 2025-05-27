@@ -9,6 +9,23 @@
 header{
     margin-top: 80px;
 }
+button{
+    background-color: whitesmoke;
+    border-radius: 4px;
+}
+button:hover{
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.ancla__boton{
+        background-color: whitesmoke;
+    border-radius: 4px;
+    border: 2px solid black;
+    padding: 2px;
+}
+.ancla__boton:hover{
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.1);
+}
 
 .cuadros{
     background-color: var(--color-contenedor);
@@ -19,7 +36,6 @@ header{
     max-width: 96%;
     margin: 10px auto;
 }
-
 
 body {
     font-family: Arial, sans-serif;
