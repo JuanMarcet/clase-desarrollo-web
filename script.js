@@ -16,7 +16,7 @@ function sumarValores() {
     let resultado = parseFloat(valor1) + parseFloat(valor2);
     document.getElementById("resultado").innerHTML = "Resultado: " + resultado;
 }
-
+focus()
 function calcularPromedio() {
     let calificacion1 = document.getElementById("calificacion1").value.trim();
     let calificacion2 = document.getElementById("calificacion2").value.trim();
@@ -172,4 +172,24 @@ let btnRestablecerColor = document.getElementById("btnrestablecerColor");
 btnRestablecerColor.addEventListener("click", () => {
 let colorFondo = getComputedStyle(document.documentElement).getPropertyValue('--color-fondo');
 document.body.style.backgroundColor = colorFondo;
+});
+
+/******************** semana 6 *************** fucniones de suma *************** */ 
+function sumarSemana6(numero1,numero2) {
+    let sumaSemana6 = numero1 + numero2;
+    document.querySelector(".resutadoSumaSemana6").innerHTML = "Resultado de la suma entre " + numero1 + " y " + numero2 + " es: " + sumaSemana6;
+        document.getElementById("numero1Semana6").value = "";
+        document.getElementById("numero2Semana6").value = "";
+}
+const btnSumaSemana6 = document.getElementById("btnSumaSemana6");
+
+btnSumaSemana6.addEventListener("click", () => {
+    const numero1 = parseFloat(document.getElementById("numero1Semana6").value);
+    const numero2 = parseFloat(document.getElementById("numero2Semana6").value);
+
+    if (isNaN(numero1) || isNaN(numero2)) {
+        alert("Por favor, ingresa números válidos.");
+    } else {
+        sumarSemana6(numero1, numero2);       
+    }
 });
