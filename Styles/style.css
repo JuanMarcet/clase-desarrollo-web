@@ -6,6 +6,9 @@
 
     --fuente-Bolden: "Bolden", sans-serif;
 }
+header{
+    margin-top: 80px;
+}
 
 .cuadros{
     background-color: var(--color-contenedor);
@@ -16,6 +19,7 @@
     max-width: 96%;
     margin: 10px auto;
 }
+
 
 body {
     font-family: Arial, sans-serif;
@@ -173,6 +177,7 @@ a:hover{
 }
 
 /*********************************************/
+/* en la semana 4 agregar un contenedor para los botones y demas */
 
 .input-group {
     margin-bottom: 20px;
@@ -221,17 +226,6 @@ input {
     padding: 0;
 }
 
-#listaNombres li {
-    background: #e0e0e0;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
 .botonlista{
     background-color: #68004e;
     padding: 5px 10px;
@@ -242,14 +236,14 @@ input {
     cursor: pointer;
 }
 
-.contenedor__botones{
-    width: 30px;
-    height: 50px;
-    background-color: aqua;
-}
-
-.semana4__principal{
-    margin-top: 80px;
+#listaNombres li {
+    background: #e0e0e0;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .contenedorBotones{

@@ -69,13 +69,17 @@ function calcularPromedio() {
     }
 }
 
+
+
+// ************************* semana 4 **************** Lista de nombres ************************************************** 
+
+// Obtener elementos del DOM
     const agregarBtn = document.getElementById("agregarBtn");
     const nombreInput = document.getElementById("nombreInput");
     const listaNombres = document.getElementById("listaNombres");
     const mensaje = document.getElementById("mensaje");
 
-
-    
+    // Agregar evento al botón al dar enter
 nombreInput.addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
             agregar();
@@ -96,6 +100,7 @@ nombreInput.addEventListener("keydown", (event) => {
     const li = document.createElement("li");
     li.textContent = nombre;
 
+    // Crear un <div> para contener los botones
     const div = document.createElement("div");
     div.classList.add("contenedorBotones");
 
