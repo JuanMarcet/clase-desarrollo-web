@@ -168,4 +168,8 @@ boton.addEventListener("click", ()=>
         document.body.style.backgroundColor=`rgba(${aleatorio1}, ${aleatorio2}, ${aleatorio3}, ${aleatorio4})`;
     });
 
-    
+let btnRestablecerColor = document.getElementById("btnrestablecerColor");
+btnRestablecerColor.addEventListener("click", () => {
+let colorFondo = getComputedStyle(document.documentElement).getPropertyValue('--color-fondo');
+document.body.style.backgroundColor = colorFondo;
+});
