@@ -27,6 +27,27 @@
     </nav>
 </header>
 
+<section class="funcionesMatematicas cuadros">
+    <div class="funcionesMatematicas__sumar">
+        <h2>Semana 4| </h2>
+        <h3>sumar valores</h3>
+        <input type="number" id="numero1" placeholder="ingrese el número 1" step="0.01" required>
+        <input type="number" id="numero2" placeholder="ingrese el número 2" step="0.01" required>
+        <p id="resultadoSuma"></p>
+        <button type="submit" onclick="sumarValores()"> Enviar</button>
+    </div>
+    <div class="funcionesMatematicas__promedio">
+        <h2>Promedio de tres calificaciones</h2>
+        <input type="number" id="calificacion1" placeholder="ingrese la calificación 1" step="0.01" required> 
+        <input type="number" id="calificacion2" placeholder="ingrese la calificación 2" step="0.01"  required>
+        <input type="number" id="calificacion3" placeholder="ingrese la calificación 3" step="0.01"required >
+
+        <p id="promedio"></p>
+        <button type="submit" onclick="calcularPromedio()"> Calcular promedio</button>
+
+    </div>
+</section>
+
 <article class="cuadros">
 
     <h3> semana 4 | Lista de Nombres</h3>
@@ -46,15 +67,37 @@
     la practica de la semana 5 es colocar un boton en la pantalla principal y cada vez que se de click en el este cambie de color mediante funcionesd de JavaScript.
 </p>
 <button class="btn" id="btnCambiarColor" onclick="cambiarColor()"> Cambiar Color</button>
+<button class="btn" id="btnrestablecerColor" onclick="restablecerColor()"> restablecer Color</button>
+
 
 </section>
 
 
+<section class="cuadros">
+    <h3> semana 5 | implementar videos <em>jueves</em></h3>
+    <p>Dentro de esta práctica debemos implementar dos videos, uno remoto puede ser de youtube y otro local y acceder a estos gracias a un video</p>
+    <div class="videos__semana5">
+        <a class="btnRemoto ancla__boton" href="https://www.youtube.com/watch?v=kHdqToHKvQE" target="_blank">Remoto</a>
+        <a class="btnLocal ancla__boton" href="/assets/Pua.mp4" target="_blank">Local</a>
+
+
+    </div>
+</section>
+
+<hr>
 
 
 
 
-
+<footer class="footer">
+    &copy; 2023 Juan Marcet. Todos los derechos reservados. <br>
+    <div class="footer__redes">
+        <a href="https://www.facebook.com/juanmarcet" target="_blank" ><img src="/assets/facebook_Icono.png" alt="Logo de facebook" class="footer__logos"></a>
+        <a href="https://www.instagram.com/juan_marcet_sv/" target="_blank" ><img src="/assets/instagram_icono.png" alt="Logo de instagram" class="footer__logos"></a>
+        <a href="https://github.com/JuanMarcet" target="_blank" ><img src="/assets/github_icono.png" alt="Logo de github" class="footer__logos"></a>
+        <a href="https://www.linkedin.com/in/juanmarcet" target="_blank"><img src="/assets/logotipo-de-linkedin.png" alt="Logo de linkedin" class="footer__logos"></a>
+</div>
+</footer>
 
 
 <script src="script.js"></script>
