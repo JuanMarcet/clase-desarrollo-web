@@ -156,7 +156,7 @@ function editar(li) {
     }
 }
 
-//*************************semana 5****************cambiar color************************************************** */
+/************************semana 5****************cambiar color************************************************** */
 
 let boton=document.getElementById("btnCambiarColor");
 boton.addEventListener("click", ()=>
@@ -173,6 +173,19 @@ btnRestablecerColor.addEventListener("click", () => {
 let colorFondo = getComputedStyle(document.documentElement).getPropertyValue('--color-fondo');
 document.body.style.backgroundColor = colorFondo;
 });
+
+/*******************mostrar video********************  */
+function mostrarVideo(){
+    let videoSemana5 = document.getElementById("videoSemana5");
+    let btnMostrarSemana5 = document.getElementById("btnMostrarSemana5");
+    if (videoSemana5.style.display === 'none') {
+        videoSemana5.style.display = 'block';
+        btnMostrarSemana5.textContent = 'Ocultar Video';
+    } else {
+        videoSemana5.style.display = 'none';
+        btnMostrarSemana5.textContent = 'Mostrar Video';
+    }
+}
 
 /******************** semana 6 *************** fucniones de suma *************** */ 
 function sumarSemana6(numero1,numero2) {

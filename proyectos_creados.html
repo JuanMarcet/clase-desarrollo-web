@@ -76,11 +76,15 @@
 <section class="cuadros">
     <h3> semana 5 | implementar videos <em>jueves</em></h3>
     <p>Dentro de esta práctica debemos implementar dos videos, uno remoto puede ser de youtube y otro local y acceder a estos gracias a un video</p>
-    <div class="videos__semana5">
+    <div class="botones__semana5">
         <a class="btnRemoto ancla__boton" href="https://www.youtube.com/watch?v=kHdqToHKvQE" target="_blank">Remoto</a>
-        <a class="btnLocal ancla__boton" href="/assets/Pua.mp4" target="_blank">Local</a>
-
-
+        <button class="btnLocal ancla__boton"id="btnMostrarSemana5" onclick="mostrarVideo()"> Mostrar Video </button>
+    </div>
+    <div class="video__semana5">
+        <video controls id="videoSemana5" style="display: none;">
+            <source src="/assets/Pua.mp4" type="video/mp4" >
+            Tu navegador no soporta el elemento de video.
+        </video>
     </div>
 </section>
 
@@ -91,7 +95,7 @@
     <p>En esta práctica debemos implementar funciones y objetos en JavaScript, en este caso, vamos a aplicar una suma </p>
     <input type="number" id="numero1Semana6" placeholder="Ingrese el primer número" step="0.01" required>
     <input type="number" id="numero2Semana6" placeholder="Ingrese el segundo número" step="0.01" required>
-    <p class="resutadoSumaSemana6"> hola </p>
+    <p class="resutadoSumaSemana6"> </p>
     <button id="btnSumaSemana6"> sumar</button>
 </section>
 

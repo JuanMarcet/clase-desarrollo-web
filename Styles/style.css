@@ -12,16 +12,21 @@ header{
 button{
     background-color: whitesmoke;
     border-radius: 4px;
+    font-family: var(--fuente-Bolden);
+    font-size: medium;
 }
 button:hover{
     box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.1);
 }
+
 
 .ancla__boton{
         background-color: whitesmoke;
     border-radius: 4px;
     border: 2px solid black;
     padding: 2px;
+    font-family: var(--fuente-Bolden);
+    font-size: medium;
 }
 .ancla__boton:hover{
     box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.1);
@@ -275,3 +280,15 @@ input {
 .editar{
     background-color: rgb(233, 142, 31);
 }
+
+.botones__semana5{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.video__semana5{
+    display: flex;
+    justify-content: center;
+}
+
